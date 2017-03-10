@@ -1,0 +1,154 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Military</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"/></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/apft.js"></script>
+	<style>
+	div {
+		
+	}
+	h3 {
+		padding: 0px;
+		margin: 0px;
+	}
+	.oneUnit {
+		height: 50px;
+		
+	}
+	
+	.twoUnit {
+		height: 100px;
+		
+	}
+	
+	.grayy {
+		background-color: gray;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title"> APFT </h1>
+		<form>
+		<div class="row rowOne">
+			<div class="dateBox col-sm-4 form-group">
+					<label for="inputDate">Date</label>
+					<input type="date" class="form-control" placeholder="Email">
+			</div>
+				
+			<div class="gradeBox col-sm-4 form-group">
+					<label for="inputGrade">Grade</label>
+					<input type="text" class="form-control" placeholder="Grade">
+			</div>
+				
+			<div class="ageBox col-sm-4 form-group">
+					<label for="inputAge">Age</label>
+					<input type="number" class="form-control" placeholder="Age">
+			</div>
+		</div>
+				
+		<div class="row rowTwo">
+			<div class="heightBox col-sm-4 form-group" id="largeBox">
+					<label for="inputDate">Height (in.)</label>
+					<input type="number" class="form-control" placeholder="Height">
+			</div>
+			
+			<div class="col-sm-8 bodyTitle"> Body Composition
+				<div class="row">
+					<div class="weightBox col-sm-6 form-group"> 
+						<label for="inputAge">Weight</label>
+						<input type="number" class="form-control" placeholder="Weight">
+					</div>
+
+					<div class="fatBox col-sm-6 form-group"> 
+						<label for="inputAge">Body Fat</label>
+						<input type="number" class="form-control" placeholder="Fat">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row rowFour">
+			<div class="heightBox col-sm-4 form-group">
+					<label for="inputDate">PU Raw Score</label>
+					<input type="number" class="form-control" placeholder="PURaw">
+			</div>
+			<div class="heightBox col-sm-4 form-group">
+					<label for="inputDate">Initials</label>
+					<input type="text" class="form-control" placeholder="Initials">
+			</div>
+			<div class="heightBox col-sm-4 form-group">
+					<label for="inputDate">Points</label>
+					<input type="number" class="form-control" placeholder="Points">
+			</div>
+		</div>
+		
+		<div class="row rowFive">
+			<div class="heightBox col-sm-4 form-group">
+					<label for="inputDate">SU Raw Score</label>
+					<input type="number" class="form-control" placeholder="SURaw">
+			</div>
+			<div class="heightBox col-sm-4 form-group">
+					<label for="inputDate">Initials</label>
+					<input type="text" class="form-control" placeholder="Initials">
+			</div>
+			<div class="heightBox col-sm-4 form-group">
+					<label for="inputDate">Points</label>
+					<input type="number" class="form-control" placeholder="Points">
+			</div>
+		</div>
+		
+		<div class="row rowSix">
+			<div class="heightBox col-sm-4 form-group">
+					<label for="input2MiRaw">2Mi Raw Score</label>
+					<input type="number" id="input2MiRaw" class="form-control" placeholder="Enter mm:ss">
+			</div>
+			<div class="heightBox col-sm-4 form-group">
+					<label for="input2MiInitials">Initials</label>
+					<input type="text" id="input2MiInitials" class="form-control" placeholder="Initials">
+			</div>
+			<div class="heightBox col-sm-4 form-group">
+					<label for="input2MiPoints">Points</label>
+					<input type="number" id="input2MiPoints" class="form-control" placeholder="Points">
+			</div>
+		</div>
+		
+		<div class="row rowSeven">
+			<div class="altEvent col-sm-8 form-group">
+				<label for="altEvent">Event</label>
+				<select class="form-control" id="altEvent">
+					<option>2.5 Mi Walk</option>
+					<option>6.2 Mi Bicycle</option>
+					<option>6.2 Stationary Bicycle</option>
+					<option>800 Yd Swim</option>
+				</select>
+
+				<label for="inputGo">Time</label>
+				<input type="text" class="form-control" placeholder="Time">
+
+				<label class="radio-inline">
+				  <input type="radio" id="inputGo" value="go" name="altGo" disabled>Go
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" id="inputGo" value="noGo" name="altGo" disabled>No-Go
+				</label>
+
+			</div>
+			<div class="col-sm-4 form-group" id="largeBox">
+				<label for="inputTotal">Total Points</label>
+				<input type="number" class="form-control" id="inputTotal" placeholder="Total Points">
+				
+				<button type="button" class="btn btn-default" onclick="calcScore()" >Calculate Score</button>
+				
+			</div>
+		</div>
+
+		</form>
+	</div>
+
+</body>
+</html>

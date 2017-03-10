@@ -1,0 +1,95 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Military</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .title {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title"> APFT </h1>
+		<form id="form-container" class="form-container">
+            <div class="row rowOne">
+                <div class="col-sm-6 form-group">
+                    <label for="inputAge">Age</label>
+                    <input type="number" class="form-control" id="inputAge" placeholder="Enter age">
+                </div>
+                <div class="col-sm-6 form-group">
+                
+                    <label>Gender</label><br>
+                    <input type="radio" name="optionsGender" id="male" value="male" checked>Male<br>
+                    <input type="radio" name="optionsGender" id="female" value="female">Female<br>
+                
+                </div>
+            </div>
+                <hr> <!--
+            <div class="row rowTwo">
+                <div class="col-sm-4">
+                    <h4>Excercise</h4>
+                </div>
+
+                <div class="col-sm-4">
+                    <h4>Raw Amount</h4>
+                </div>
+
+                <div class="col-sm-4">
+                    <h4>Points</h4>
+                </div>
+            </div> -->
+
+            <div class="row rowThree">
+                <div class="col-sm-4">
+                    <label>Push Ups</label>
+                </div>
+
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="inputPU" placeholder="Enter Push Up Reps">
+                </div>
+
+                <div class="col-sm-4" id="puScore">
+                </div>
+            </div>
+
+                <div class="row rowFour">
+                <div class="col-sm-4">
+                    <label>Sit Ups</label>
+                </div>
+
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="inputSU" placeholder="Enter Sit Up Reps">
+                </div>
+
+                <div class="col-sm-4" id="suScore">
+
+                </div>
+            </div>
+
+            <div class="row rowFive">
+                <div class="col-sm-4">
+                    <label>2 Mile Run</label>
+                </div>
+
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="inputAerobic" placeholder="Enter Time">
+                </div>
+
+                <div class="col-sm-4" id="aerobicScore">
+
+                </div>
+            </div>
+            <div class="row rowSix">
+
+            </div>
+            <button id="submit-btn">Submit</button>
+		</form>
+	</div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
