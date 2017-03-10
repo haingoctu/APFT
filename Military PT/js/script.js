@@ -1,4 +1,9 @@
+/**
+Hai Tu
+haingoctu@gmail.com
 
+
+**/
 function loadData() {
     var puPoints = $("#puScore");
     var suPoints = $("#suScore");
